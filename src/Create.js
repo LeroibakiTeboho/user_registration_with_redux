@@ -1,3 +1,4 @@
+// || imports
 import React, { useState } from "react";
 import { addUser } from "./UserReducer";
 import { useDispatch, useSelector } from "react-redux";
@@ -30,9 +31,9 @@ function Create() {
         {/* || form */}
         <form onSubmit={handleSubmit}>
 
-        {/* || name input */}
+        {/* || fullname input */}
           <div>
-            <label htmlFor="name">Name:</label>
+            <label htmlFor="name">Full name:</label>
             <input
               type="text"
               name="name"
